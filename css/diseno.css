@@ -51,10 +51,6 @@
     margin-right: 50px;
   }
   
-  .imagenArticulo {
-    margin-left: 85px;
-  }
-  
   .textoCuestionario {
     font-size: 180%;
   }
@@ -125,3 +121,4 @@
       opacity: 1;
     }
   }
+
