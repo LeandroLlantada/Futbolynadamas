@@ -1,101 +1,120 @@
-html{
+   html {
     font-size: 62.5%;
     background-color: black;
-}
-
-.distribucionHeader{
+  }
+  
+  .distribucionHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.cajaHeader{
-    padding:5px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .cajaHeader {
+    padding: 5px;
+    position: -webkit-sticky;
     position: sticky;
-}
-
-.tamanoNav{
+  }
+  
+  .tamanoNav {
     font-size: 200%;
-}
-
-.tamanoDesplegable{
+  }
+  
+  .tamanoDesplegable {
     font-size: 100%;
-}
-
-.tamanoletraInicio{
+  }
+  
+  .tamanoletraInicio {
     font-size: 300%;
-}
-
-.tamanoletraFooter{
+  }
+  
+  .tamanoletraFooter {
     font-size: 150%;
-}
-
-.fondo{
+  }
+  
+  .fondo {
     color: white;
     background-color: black;
     padding-bottom: 25px;
-}
-
-.textoArticulo{
+  }
+  
+  .textoArticulo {
     font-size: 150%;
     text-align: justify;
     margin-left: 50px;
     margin-right: 50px;
-}
-
-.imagenArticulo{
+  }
+  
+  .imagenArticulo {
     margin-left: 85px;
-}
-
-.textoCuestionario{
+  }
+  
+  .textoCuestionario {
     font-size: 180%;
-}
-
-.cuestionario{
+  }
+  
+  .cuestionario {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 35px;
-}
-
-.italica{
+  }
+  
+  .italica {
     font-style: italic;
-}
-
-.textoMomentos{
+  }
+  
+  .textoMomentos {
     font-size: 150%;
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
-}
-
-.fondoMomentos{
+  }
+  
+  .fondoMomentos {
     color: white;
     background-color: black;
-}
-
-.tituloPrincipal{
+  }
+  
+  .tituloPrincipal {
     font-size: 275%;
     margin-left: 35px;
     padding-top: 10px;
-}
-
-.imagenSep{
+  }
+  
+  .imagenSep {
     margin-top: 25px;
     margin-bottom: 25px;
-}
-
-.tituloFichajes{
+  }
+  
+  .tituloFichajes {
     font-size: 275%;
     padding-top: 15px;
-}
-
-.imagenLista{
+  }
+  
+  .imagenLista {
     list-style-image: url(../images/iconoFutbol.png);
-}
-
-.aparecer {
+  }
+  
+  .aparecer {
+    -webkit-animation-duration: 2s;
             animation-duration: 2s;
+    -webkit-animation-name: aparecer;
             animation-name: aparecer;
+  }
+  
+  @-webkit-keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   
   @keyframes aparecer {
