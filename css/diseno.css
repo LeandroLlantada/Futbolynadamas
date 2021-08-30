@@ -1,0 +1,110 @@
+html{
+    font-size: 62.5%;
+    background-color: black;
+}
+
+.distribucionHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cajaHeader{
+    padding:5px;
+    position: sticky;
+}
+
+.tamanoNav{
+    font-size: 200%;
+}
+
+.tamanoDesplegable{
+    font-size: 100%;
+}
+
+.tamanoletraInicio{
+    font-size: 300%;
+}
+
+.tamanoletraFooter{
+    font-size: 150%;
+}
+
+.fondo{
+    color: white;
+    background-color: black;
+    padding-bottom: 25px;
+}
+
+.textoArticulo{
+    font-size: 150%;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.imagenArticulo{
+    margin-left: 85px;
+}
+
+.textoCuestionario{
+    font-size: 180%;
+}
+
+.cuestionario{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 35px;
+}
+
+.italica{
+    font-style: italic;
+}
+
+.textoMomentos{
+    font-size: 150%;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.fondoMomentos{
+    color: white;
+    background-color: black;
+}
+
+.tituloPrincipal{
+    font-size: 275%;
+    margin-left: 35px;
+    padding-top: 10px;
+}
+
+.imagenSep{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.tituloFichajes{
+    font-size: 275%;
+    padding-top: 15px;
+}
+
+.imagenLista{
+    list-style-image: url(../images/iconoFutbol.png);
+}
+
+.aparecer {
+            animation-duration: 2s;
+            animation-name: aparecer;
+  }
+  
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
