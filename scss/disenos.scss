@@ -1,97 +1,116 @@
-html{
+html {
     font-size: 62.5%;
     background-color: black;
-}
-
-.distribucionHeader{
+  }
+  
+  .distribucionHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.cajaHeader{
-    padding:5px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .cajaHeader {
+    padding: 5px;
+    position: -webkit-sticky;
     position: sticky;
-}
-
-.tamanoNav{
+  }
+  
+  .tamanoNav {
     font-size: 200%;
-}
-
-.tamanoDesplegable{
+  }
+  
+  .tamanoDesplegable {
     font-size: 100%;
-}
-
-.tamanoletraInicio{
+  }
+  
+  .tamanoletraInicio {
     font-size: 300%;
-}
-
-.tamanoletraFooter{
+  }
+  
+  .tamanoletraFooter {
     font-size: 150%;
-}
-
-.fondo{
+  }
+  
+  .fondo {
     color: white;
     background-color: black;
     padding-bottom: 25px;
-}
-
-.textoArticulo{
+  }
+  
+  .textoArticulo {
     font-size: 150%;
     text-align: justify;
     margin-left: 50px;
     margin-right: 50px;
-}
-
-.textoCuestionario{
+  }
+  
+  .textoCuestionario {
     font-size: 180%;
-}
-
-.cuestionario{
+  }
+  
+  .cuestionario {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 35px;
-}
-
-.italica{
+  }
+  
+  .italica {
     font-style: italic;
-}
-
-.textoMomentos{
+  }
+  
+  .textoMomentos {
     font-size: 150%;
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
-}
-
-.fondoMomentos{
+  }
+  
+  .fondoMomentos {
     color: white;
     background-color: black;
-}
-
-.tituloPrincipal{
+  }
+  
+  .tituloPrincipal {
     font-size: 275%;
     margin-left: 35px;
     padding-top: 10px;
-}
-
-.imagenSep{
+  }
+  
+  .imagenSep {
     margin-top: 25px;
     margin-bottom: 25px;
-}
-
-.tituloFichajes{
+  }
+  
+  .tituloFichajes {
     font-size: 275%;
     padding-top: 15px;
-}
-
-.imagenLista{
+  }
+  
+  .imagenLista {
     list-style-image: url(../images/iconoFutbol.png);
-}
-
-.aparecer {
-            animation-duration: 2s;
+  }
+  
+  .aparecer {
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-name: aparecer;
             animation-name: aparecer;
+  }
+  
+  @-webkit-keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   
   @keyframes aparecer {
@@ -101,4 +120,67 @@ html{
     100% {
       opacity: 1;
     }
+  }
+
+  .centrar{
+    text-align: center;
+  }
+
+  .titulo{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 275%;
+    color:royalblue;
+    font-family: 'Merriweather', serif;
+  }
+
+  .tipoLetra{
+    font-family: 'Merriweather', serif;
+  }
+
+  .articlesI{
+    background-color: black;
+    color: white;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    text-align: center;
+  }
+
+  .videoMomentos{
+    height: 350px;
+    width: 750px;
+  }
+
+  .animacionA {
+    width: 40%; height: 40%;
+    transition: all 2s;       
+  }
+  .animacionA:hover {
+    height: 55%; width: 55%;
+  }
+
+  .navbar ul{
+    list-style: none;
+    font-size: 15px;
+  }
+
+  .navbar li {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+  }
+
+  .navbar ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .navbar ul li::before{
+    content: "";
+    height: 4px;
+    width: 100%;
+    background: yellowgreen;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
   }

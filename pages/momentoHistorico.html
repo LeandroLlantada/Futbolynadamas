@@ -6,57 +6,59 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="FUTBOL, FICHAJES, RESULTADOS, PREMIER LEAGUE, LIGUE 1, SERIE A, LIGA ARGENTINA">
-  <title>Momentos</title>
+  <title>Momento Histórico</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/diseno.css">
 </head>
 
-<body>
+<body class="tipoLetra">
   <header class="distribucionHeader cajaHeader aparecer">
     <img src="../images/logoPag.jpg" alt="Logo de la página">
-    <h1>Fútbol y nada más</h1>
+    <h1 class="titulo aparecer">Fútbol y nada más</h1>
   </header>
 
   <nav class="tamanoNav">
-    <ul class="nav nav-pills">
-      <li class="nav-item">
-        <a class="nav-link" href="../index.html">Inicio</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Noticias</a>
-        <div class="dropdown-menu tamanoDesplegable">
-          <a class="dropdown-item" href="./ultimasNoticias.html">Últimas noticias</a>
-          <a class="dropdown-item" href="./resultados.html">Resultados</a>
-          <a class="dropdown-item" href="./fichajes.html">Fichajes</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="./momentos.html">Momentos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="./nosotros.html">Nosotros</a>
-      </li>
-    </ul>
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="../index.html">Inicio</a>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Noticias</a>
+          <div class="dropdown-menu tamanoDesplegable">
+            <a class="dropdown-item" href="../pages/ultimasNoticias.html">Últimas noticias</a>
+            <a class="dropdown-item" href="../pages/resultados.html">Resultados</a>
+            <a class="dropdown-item" href="../pages/fichajes.html">Fichajes</a>
+          </div>
+        </li>
+        <li>
+          <a href="../pages/momentoHistorico.html">Momento histórico</a>
+        </li>
+        <li>
+          <a href="../pages/nosotros.html">Nosotros</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 
   <section class="fondoMomentos">
-    <h2 class="tituloPrincipal">Equipos históricos de la Premier League</h2>
+    <h2 class="tituloPrincipal">Equipo histórico de la Premier League</h2>
     <article class="textoMomentos aparecer">
       <h3><span class="italica" id="losInvencibles">Los invencibles de la Premier League 2003-04</span></h3>
       <p>¡Qué recuerdos, qué disfrute de equipo! Podríamos decir que este equipo de Arsene Wegner marcó no solo una
         época, sino que dejó en el fútbol un estilo único, que luego sería aplicado por otros dts. Antes de adentrarnos
         más recordemos la plantilla de los Invencibles:</p>
-      <img src="../images/equipoInvencibles.png" alt="11 titular delos invencibles" class="imagenSep img-fluid">
+      <img src="../images/equipoInvencibles.png" alt="11 titular delos invencibles" class="imagenSep img-fluid animacionA">
       <p>Era un equipo con jugadores que estaban en el top mundial. Leyendas como Henry, Bergkamp, Pirés, Vieira,
         Campbell, Cole y Lehmann.
         Una temporada fabulosa en la que consiguieron 26 victorias, 12 empates y 0 derrotas, acabando la temporada
         invictos, logro que ningún otro equipo inglés pudo conseguir en la Premier.
       </p>
-      <img src="../images/tituloInvencibles.jpg" alt="El arsenal levantando el trofeo de campeón" class="imagenSep img-fluid">
+      <img src="../images/tituloInvencibles.jpg" alt="El arsenal levantando el trofeo de campeón" class="imagenSep img-fluid animacionA">
       <p>El goleador del equipo y de la premier fue Henry con 30 tantos, mientras que el mayor asistidor fue Pirés.</p>
       Lastimosamente el Arsenal perdió la final de la Champions League días después de congrarse campeón de la Premier.
       Es la única espina que quedó en este grupo de jugadores y entrenadores increíbles que dejaron un fútbol hermoso,
@@ -65,7 +67,7 @@
         del fútbol:</p>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/XA625ooKqSw" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen class="img-fluid imagenSep"></iframe>
+        allowfullscreen class="img-fluid imagenSep videoMomentos"></iframe>
     </article>
   </section>
 
@@ -119,7 +121,7 @@
                 <a href="./fichajes.html" class="text-white">Fichajes</a>
               </li>
               <li>
-                <a href="./momentos.html" class="text-white">Momentos</a>
+                <a href="./momentoHistorico.html" class="text-white">Momento histórico</a>
               </li>
             </ul>
           </div>
@@ -140,7 +142,7 @@
                 <a href="./ultimasNoticias.html#falloTas" class="text-white">El TAS falla contra LaLiga</a>
               </li>
               <li>
-                <a href="./momentos.html#losInvencibles" class="text-white">Los invencibles de la Premier 2003-04</a>
+                <a href="./momentoHistorico.html#losInvencibles" class="text-white">Los invencibles de la Premier 2003-04</a>
               </li>
             </ul>
           </div>

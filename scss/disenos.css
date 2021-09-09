@@ -9,11 +9,11 @@ html {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .cajaHeader {
@@ -98,10 +98,10 @@ html {
 }
 
 .aparecer {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
   -webkit-animation-name: aparecer;
-          animation-name: aparecer;
+  animation-name: aparecer;
 }
 
 @-webkit-keyframes aparecer {
@@ -120,5 +120,72 @@ html {
   100% {
     opacity: 1;
   }
+}
+
+.centrar {
+  text-align: center;
+}
+
+.titulo {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 275%;
+  color: royalblue;
+  font-family: 'Merriweather', serif;
+}
+
+.tipoLetra {
+  font-family: 'Merriweather', serif;
+}
+
+.articlesI {
+  background-color: black;
+  color: white;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  text-align: center;
+}
+
+.videoMomentos {
+  height: 350px;
+  width: 750px;
+}
+
+.animacionA {
+  width: 40%;
+  height: 40%;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.animacionA:hover {
+  height: 55%;
+  width: 55%;
+}
+
+.navbar ul {
+  list-style: none;
+  font-size: 15px;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar ul li::before {
+  content: "";
+  height: 4px;
+  width: 100%;
+  background: yellowgreen;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
 }
 /*# sourceMappingURL=disenos.css.map */

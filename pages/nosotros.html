@@ -11,36 +11,38 @@
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/diseno.css">
 </head>
 
-<body>
+<body class="tipoLetra">
   <header class="distribucionHeader cajaHeader aparecer">
     <img src="../images/logoPag.jpg" alt="Logo de la página">
-    <h1>Fútbol y nada más</h1>
+    <h1 class="titulo aparecer">Fútbol y nada más</h1>
   </header>
 
   <nav class="tamanoNav">
-    <ul class="nav nav-pills">
-      <li class="nav-item">
-        <a class="nav-link" href="../index.html">Inicio</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Noticias</a>
-        <div class="dropdown-menu tamanoDesplegable">
-          <a class="dropdown-item" href="./ultimasNoticias.html">Últimas noticias</a>
-          <a class="dropdown-item" href="./resultados.html">Resultados</a>
-          <a class="dropdown-item" href="./fichajes.html">Fichajes</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="./momentos.html">Momentos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="./nosotros.html">Nosotros</a>
-      </li>
-    </ul>
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="../index.html">Inicio</a>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Noticias</a>
+          <div class="dropdown-menu tamanoDesplegable">
+            <a class="dropdown-item" href="../pages/ultimasNoticias.html">Últimas noticias</a>
+            <a class="dropdown-item" href="../pages/resultados.html">Resultados</a>
+            <a class="dropdown-item" href="../pages/fichajes.html">Fichajes</a>
+          </div>
+        </li>
+        <li>
+          <a href="../pages/momentoHistorico.html">Momento histórico</a>
+        </li>
+        <li>
+          <a href="../pages/nosotros.html">Nosotros</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 
   <h2 class="tituloPrincipal">¿Quieres trabajar con nosotros?</h2>
@@ -55,7 +57,7 @@
         <div class="mb-3">
           <label for="¿Por qué quieres trabajar aquí?" class="form-label">Cuéntanos por qué quieres trabajar
             aquí</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <textarea class="form-control animacionA" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
         <select class="form-select" aria-label="Selecciona tu rango de edad">
           <option selected>Rango de edad</option>
@@ -63,6 +65,17 @@
           <option value="2">25-40</option>
           <option value="3">+40</option>
         </select>
+        <div>
+          ¿Cuánto crees que te gusta el fútbol? En un rango del uno al 10 creo que...
+        <select name="Entre el uno y el 10 creo que...">
+          <option value="L">1-6</option>
+          <option value="M">7-9</option>
+          <option value="S">10</option>
+        </select>
+        <div>
+          Acepto conpartir mi información
+          <input type="checkbox" name="acepta" value="1" />   
+        </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
   </section>
@@ -117,7 +130,7 @@
                 <a href="./fichajes.html" class="text-white">Fichajes</a>
               </li>
               <li>
-                <a href="./momentos.html" class="text-white">Momentos</a>
+                <a href="./momentoHistorico.html" class="text-white">Momento histórico</a>
               </li>
             </ul>
           </div>
@@ -138,7 +151,7 @@
                 <a href="./ultimasNoticias.html#falloTas" class="text-white">El TAS falla contra LaLiga</a>
               </li>
               <li>
-                <a href="./momentos.html#losInvencibles" class="text-white">Los invencibles de la Premier 2003-04</a>
+                <a href="./momentoHistorico.html#losInvencibles" class="text-white">Los invencibles de la Premier 2003-04</a>
               </li>
             </ul>
           </div>
